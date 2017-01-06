@@ -44,18 +44,28 @@ $(document).ready(function () {
 
 
     $("#scroll-logos").simplyScroll();
-  
+    
+	$(".card-details").enscroll({
+		showOnHover: false,
+		verticalTrackClass: 'track3',
+		verticalHandleClass: 'handle3'
+	});
+				
 
     /**
       Modified by Varun
     */
     
+	$('.offer-box2').click(function(e) {
+        $(this).parents('.offer-card').toggleClass('rotate');
+    });
+	
     $('.offer-img, .offer-box2').mouseenter(function () {
-        $(this).parents('.offer-card').addClass('rotate');
+     //   $(this).parents('.offer-card').addClass('rotate');
     });
 
     $('.offer-card').mouseleave(function () {
-        $(this).removeClass('rotate');
+    //  $(this).removeClass('rotate');
     });
     
     
@@ -72,7 +82,7 @@ $(document).ready(function () {
         if (($(this).find(".card-details")).is(":only-of-type")) {
             $(this).find(".card-details").css("min-height", "200px");
         } else {
-            $(this).css("height", "550px");
+          //  $(this).css("height", "550px");
         }
     }, function () {
         $(this).css("height", "320");

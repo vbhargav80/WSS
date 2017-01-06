@@ -441,12 +441,11 @@ color: #fff;
   min-height: 350px;
 } */
 
-.rotate {
+.offer-card-outer:hover .offer-card, .added-case .col-md-3:hover .offer-card, .rotate {
   -webkit-transform: rotateY( 180deg );
   -moz-transform: rotateY( 180deg );
   -o-transform: rotateY( 180deg );
   transform: rotateY( 180deg );
-  min-height: 350px;
 }
 
 .inner-product-card .card-back .card-details {
@@ -502,7 +501,34 @@ color: #fff;
     min-height: 200px;
 	text-align:left;
 	color:#b3b3b3;
+	height: 220px;
+	width: 100% !important;
+	overflow: auto;
 }
+
+.track3 {
+    width: 10px;
+    background: #242b3b;
+    margin-right: 2px;
+    border-radius: 10px;
+    -webkit-transition: background 250ms linear;
+    transition: background 250ms linear;
+}
+
+.track3:hover,
+.track3.dragging {
+    background: #242b3b; 
+}
+
+.handle3 {
+    width: 10px;
+    right: 0px;
+    background: #b47b46;
+    border-radius: 7px;
+    -webkit-transition: width 250ms;
+    transition: width 250ms;
+}
+
 
 .offer-code{
     padding:10px 15px;
@@ -1149,6 +1175,7 @@ box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.45);
 .category-box > p {
   font-size: 15px;
 }
+.card-back .card-details { height: 175px; }
 
 }
 @media screen and (max-width: 767px) {
@@ -1187,6 +1214,7 @@ box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.45);
 .nav-tabs > li > a {
     width: 100%;
 }
+.card-back .card-details { height: 220px; } 
 }
 
 @media screen and (max-width:639px) {
@@ -1388,9 +1416,11 @@ body, html
 }
 .added-case .card-back
 {
-    padding: 20px;
+    padding: 20px 0;
     min-height: 275px;
+	
 }
+.added-case .card-back .card-details { height: 234px; overflow: auto; }
 @media (max-width: 767px)
 {
     .imp-tips-wrapper
