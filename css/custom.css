@@ -639,7 +639,7 @@ cursor: pointer;
 
 p.welcome {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   color: #d5a577 !important;
   padding: 40px 0;
 }
@@ -741,7 +741,7 @@ section.separate {
  }
 
 .title-block h2 {
-  font-size: 35px;
+  font-size: 28px;
 }
 
 .title-block h2 span {
@@ -759,7 +759,6 @@ section.separate {
     background: #f3ece5;
     position: relative;
     max-width: 505px;
-    max-height: 135px;
     overflow: hidden;
 }
 
@@ -783,7 +782,6 @@ font-family: 'Open Sans';
     font-size: 16px;
     font-family: 'Open Sans';
     /* opacity: .6; */
-    max-height: 68px;
     overflow: hidden;
 }
 
@@ -875,6 +873,60 @@ ul.discounts li {
   overflow: hidden;
 }
 
+section.retailers h2{
+  text-align: right;
+}
+section.retailers .improve-inner{
+  overflow: inherit;
+  max-height: 300px;
+}
+
+section.retailers .improve-right p {
+  margin-bottom: 40px;
+}
+
+section.retailers .improve-inner h3{
+  font-size: 20px;
+}
+section.retailers img.imp-icon{
+  position: absolute;
+  top: 10%;
+  left: -50px;
+}
+
+.row.retailers-logos {
+    min-height: 120px;
+    margin-bottom: 10px;
+    
+}
+
+.row.retailers-logos .col-lg-4, row.retailers-logos .col-md-4 {
+    vertical-align:middle;
+}
+
+.retailers-logos img{
+  max-width: 160px;
+  
+}
+.contact-form-container{
+  margin-top: 50px;
+  background-color: #f2eae3;
+  border: 1px solid #c69c6d;
+}
+.contact-form-container h2{
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.contact-form input[type="submit"]{
+  background-color: #c69c6d;
+  width: 100%;
+  margin-top: 20px;
+}
+.contact-form .form-control{
+  border: 1px solid #c69c6d;
+}
 
 /* footer css*/
 
@@ -1268,6 +1320,14 @@ box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.45);
 
 .below-footer-sec {
     background-image: url(../img/bg-pattern.png);
+    padding: 30px 0;
+}
+.below-footer-sec p{
+  text-align: center;
+}
+.below-footer-sec-2{
+  border-top: 5px solid #b9804b;
+  background: #000;
 }
 
 .gps_ring {
