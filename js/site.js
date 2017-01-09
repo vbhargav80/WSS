@@ -7,7 +7,7 @@ $(document).ready(function () {
     $('.ws-slider').slick({
         autoplay: true,
         arrows: true,
-        dots: false,
+        dots: true,
         infinite: false,
         speed: 300,
         slidesToShow: 4,
