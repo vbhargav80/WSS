@@ -50,7 +50,12 @@ $(document).ready(function () {
 		verticalTrackClass: 'track3',
 		verticalHandleClass: 'handle3'
 	});
-				
+    
+	$(".card-details-no-flip").enscroll({
+		showOnHover: false,
+		verticalTrackClass: 'track3',
+		verticalHandleClass: 'handle3'
+	});			
 
     /**
       Modified by Varun
