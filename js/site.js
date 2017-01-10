@@ -51,7 +51,7 @@ $(document).ready(function () {
 		verticalHandleClass: 'handle3'
 	});
     
-	$(".card-details-no-flip").enscroll({
+	$(".card-details-no-flip-inner").enscroll({
 		showOnHover: false,
 		verticalTrackClass: 'track3',
 		verticalHandleClass: 'handle3'

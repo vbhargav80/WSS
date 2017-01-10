@@ -523,8 +523,16 @@ color: #fff;
 	overflow: auto;
 }
 
+.card-details-no-flip-inner {
+    height: 210px;
+    width: 100% !important;
+    padding-right: 15px !important;
+}
+
 .card-details-no-flip {
     padding: 0px 10px;
+    color: #fff;
+    font-family: 'Open Sans';
 }
 
 .card-details-no-flip h4 {
@@ -562,8 +570,33 @@ color: #fff;
     padding:10px 15px;
 	color:#fff;
 	text-align:left;
+    font-family: 'Open Sans';
 }
 
+.offer-code > .col-md-6 {
+    padding: 0px 0px 0px 2px;
+    text-align: left;
+}
+
+.card-front-no-flip .offer-box2 {
+    padding-top: 2px;
+}
+
+.offer-1 {
+    color: #a9cbff;
+}
+
+.offer-2 {
+    color: #2280bf; 
+}
+
+.offer-3 {
+    color: #E26A6A; 
+}
+
+.offer-4 {
+    color: #2ECC40; 
+}
 
 
 .offer-img{
@@ -609,7 +642,7 @@ text-transform: uppercase;
 color: #fff;
 float: left;
 width: 50%;
-
+font-family: 'Open Sans';
 min-height: 45px;
 }
 
