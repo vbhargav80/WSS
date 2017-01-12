@@ -57,10 +57,25 @@ $(document).ready(function () {
 		verticalHandleClass: 'handle3'
 	});			
 
-    /**
-      Modified by Varun
-    */
-    
+    $('.offer-card').mouseenter(function () {
+        $(this).next('.front-button-box').css("display","none");
+        $(this).next('.front-button-box').next('.back-button-box').css("display","block");
+    });
+
+    $('.offer-card').mouseleave(function () {
+        $(this).next('.front-button-box').css("display","block");
+        $(this).next('.front-button-box').next('.back-button-box').css("display","none");
+    });
+
+    $('.button-box .offer-box2').mouseenter(function(e) {
+        $(this).html("<small>View Offers</small>");
+    });
+
+    $('.button-box .offer-box2').mouseleave(function(e) {
+        $(this).html("<small>" + $(this).data("offers") + " Offers</small>");
+    });
+
+
 	$('.offer-box2').click(function(e) {
         $(this).parents('.offer-card').toggleClass('rotate');
     });
@@ -73,30 +88,8 @@ $(document).ready(function () {
     //  $(this).removeClass('rotate');
     });
     
-    
-    /* Start Varun Japan Edits */
-    if ($(window).width() <= 767) {
-        $('.offer-card').click(function () {
-            $(this).toggleClass('rotate');
-        });
-        $('.offer-img').click(function () {
-            $(this).parents('.offer-card').toggleClass('rotate');
-        });
-    }
-    $(".offer-card-outer > .offer-card").hover(function () {
-        if (($(this).find(".card-details")).is(":only-of-type")) {
-            $(this).find(".card-details").css("min-height", "200px");
-        } else {
-          //  $(this).css("height", "550px");
-        }
-    }, function () {
-        $(this).css("height", "320");
-    });
-    /* End Varun Japan Edits */
-
-    
     // ----- TILE -----
-    $(".card-back .offer-box2").click(function () {
+    $(".offer-box2").click(function () {
         $(".added-case:not(#" + $(this).data("added-case") + ")").hide();
 
         $("#" + $(this).data("added-case")).toggle(500);
