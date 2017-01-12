@@ -14,6 +14,7 @@
       <link href="css/jquery.simplyscroll.css" rel="stylesheet">
       <!-- Custom scroll CSS -->
       <link href="css/jquery.mCustomScrollbar" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.4.0/introjs.min.css" rel="stylesheet" type="text/css">
       
       <!-- Custom Fonts -->
       <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -26,6 +27,8 @@
       <link href="css/custom.css" rel="stylesheet">
       <!-- jQuery -->
       <script src="js/jquery.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.4.0/intro.min.js"></script>
+      
       <script>
             $(document).ready(function(){
                   /*$(".added-case1").hide();
@@ -314,7 +317,7 @@
                                                 <div class="col-md-9 imp-tips-wrapper" >
                                                       <div class="row" style="margin-right: -5px;">
                                                             <div class="col-md-9 text-right col-xs-8">
-                                                              <h3 style="margin-top: 10px;" data-toggle="modal" data-target="#myModal" class="visible-md visible-lg"><strong>IMPORTANT TIPS</strong></h3>
+                                                              <h3 style="margin-top: 10px; cursor: default;" id="important-tips-trigger" data-toggle="modal" data-target="#myModal" class="visible-md visible-lg"><strong>IMPORTANT TIPS</strong></h3>
                                                               <h4 style="margin-top: 10px;" data-toggle="modal" data-target="#myModal" class="visible-xs"><strong>IMPORTANT TIPS</strong></h4>
                                                             </div>
                                                             <div class="col-md-3 helpicon col-xs-4" style="margin-top: 5px;" >
@@ -329,7 +332,7 @@
 
                                     </div>
                                     <div class="col-sm-2 text-right text-center-xs">
-                                          <a href="" class="btn btn-lg btn-round  btn-brown" data-toggle="modal" data-target="#modal-saveCalculator">Savings Calculator</a>
+                                          <a href="" id="savings-calculator" class="btn btn-lg btn-round  btn-brown" data-toggle="modal" data-target="#modal-saveCalculator">Savings Calculator</a>
                                     </div>
                               </div>
                         </div>
@@ -2409,9 +2412,33 @@
                         $post.toggleClass("helpicondisplay");
                         }, 20000);
 
+                  function startIntro(){
+        var intro = introJs();
+          intro.setOptions({
+            steps: [
+              { 
+                intro: "Welcome to the new look WeShopSmart Site! Gear up for a quick tour of how to use the website"
+              },
+              {
+                element: '#savings-calculator',
+                intro: "Try our new savings calculator",
+                position: 'left'
+              },
+              {
+                element: '#important-tips-trigger',
+                intro: 'Read our important tips if you ever have any questions or doubts.',
+                position: 'left'
+              },
+              {
+                intro: "Thank you for visiting. Please give Varun all your money."
+              },
+            ]
+          });
 
+          intro.start();
+      }
 
-
+      setTimeout(startIntro,3000);
 			</script>
       </footer>
 </body>
