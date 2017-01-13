@@ -689,6 +689,11 @@ cursor: pointer;
 background-color: #242B3B;
 
 }
+
+.offer-box2 {
+    cursor: pointer;
+}
+
 .offer-box2 small{
 color: #fff;
 text-transform: none;
