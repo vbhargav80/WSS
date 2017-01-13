@@ -733,13 +733,9 @@ cursor: pointer;
   max-width: 600px;
   height: 506px;
   margin: auto;
-  margin-top: auto;
+  margin-top: 20px;
   vertical-align: middle;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  
 }
 
 .sign-up-form {
