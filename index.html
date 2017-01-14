@@ -28,6 +28,11 @@
       <!-- jQuery -->
       <script src="js/jquery.js"></script>
       <script src="js/intro.js/intro.js"></script>
+
+      <script>
+           
+      </script>
+      
 </head>
 
 <body>
@@ -2445,6 +2450,11 @@
             setTimeout(function() {$(".go-to-store-absolute").show()},700);
             ;
             });
+
+             var isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
+            if (isIE11) {
+                  $('body').addClass('ie11');
+            }
 			</script>
       </footer>
 </body>

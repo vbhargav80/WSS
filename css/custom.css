@@ -426,6 +426,11 @@ perspective: 1000px;
 
 	position: relative;
 }
+
+body.ie11 .offer-card{
+  transition: 0.1s;
+}
+
 .offer-card-no-flip {
     color: #fff;
     min-height: 315px;
@@ -443,18 +448,27 @@ perspective: 1000px;
     font-size: 12px;
 }
 
-/* .offer-card:hover{
- -webkit-transform: rotateY( 180deg );
-  -moz-transform: rotateY( 180deg );
-  -o-transform: rotateY( 180deg );
-  transform: rotateY( 180deg );
-  min-height: 350px;
-} */
 .offer-card-outer .offer-card:hover .card-back, .added-case .col-md-3:hover .offer-card .card-back{
   transform: rotateY( 0deg );
 }
 .offer-card-outer .offer-card:hover .card-front, .added-case .col-md-3:hover .offer-card .card-front {
   transform: rotateY( 180deg );
+}
+.offer-card {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+body.ie11 .offer-card{
+  transition: 0.1s;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .offer-card {
+    transform: rotateY(180deg) scale(1.05);
+    position: relative;
+    z-index: 2;
 }
 
 .back-button-box {
@@ -474,7 +488,7 @@ perspective: 1000px;
 }
 
 .card-back, .card-front{
-  transition: 0.2s;
+  transition: 0.6s;
   transform-style: preserve-3d;
 backface-visibility: hidden;
   
@@ -495,6 +509,10 @@ backface-visibility: hidden;
  
   transform: rotateY( -180deg );
    background-color:#000;
+}
+
+body.ie11 .card-back, body.ie11 .card-front{
+  transition: 0.1s;
 }
 
 .go-to-store-absolute {
@@ -1518,6 +1536,7 @@ opacity:0;
 		transform: rotateY(0deg);
 		webkit-transform: rotateY(0deg);
 		-ms-transform: rotateY(0deg);
+        
 	}
 	.flip-container:hover .flipper .front, .flip-container.hover .flipper .front {
 		transform: rotateY(180deg);
@@ -1540,15 +1559,21 @@ opacity:0;
 	position: relative;
 }
 
+body.ie11 .flip-container .flipper{
+  transition: 0.1s;
+}
 
 .flip-container .front, .back {
 	backface-visibility: hidden;
-	transition: 0.5s;
+	transition: 0.2s;
 	position: absolute;
 	top: 0;
 	left: 0;
 }
 
+body.ie11 .flip-container .front, body.ie11 .flip-container .back {
+  transition: 0.1s;
+}
 
 .flip-container .front {
 	z-index: 2;
