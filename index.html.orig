@@ -14,7 +14,7 @@
       <link href="css/jquery.simplyscroll.css" rel="stylesheet">
       <!-- Custom scroll CSS -->
       <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
-      <link rel="stylesheet" type="text/css" href="js/intro.js/introjs.css">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.4.0/introjs.min.css" rel="stylesheet" type="text/css">
       
       <!-- Custom Fonts -->
       <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -27,7 +27,7 @@
       <link href="css/custom.css" rel="stylesheet">
       <!-- jQuery -->
       <script src="js/jquery.js"></script>
-      <script src="js/intro.js/intro.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.4.0/intro.min.js"></script>
 </head>
 
 <body>
@@ -288,7 +288,7 @@
                                     <div class="col-sm-4 col-md-5">
                                           <div class="row">
                                                 <div class="col-md-9 imp-tips-wrapper" >
-                                                      <div class="row intro1" >
+                                                      <div class="row" >
                                                             <div class="col-md-9 text-center col-xs-8">
                                                               <h3 style="margin-top: 10px; cursor: default;" id="important-tips-trigger" data-toggle="modal" data-target="#myModal" class=" visible-lg"><strong>IMPORTANT TIPS</strong></h3>
                                                               <h4 style="margin-top: 10px;" data-toggle="modal" data-target="#myModal" class="visible-md visible-sm visible-xs"><strong>IMPORTANT TIPS</strong></h4>
@@ -317,7 +317,7 @@
                   <div class="container">
                         <h1 class="text-center font-open"><strong>OFFERS ENDING SOON</strong></h1>
                         <div class="ws-slider">
-                              <div class="offer-card-outer intro3">
+                              <div class="offer-card-outer">
                                     <div class="offer-card">
                                           <div class="card-front">
                                                 <div class="offer-img">
@@ -369,7 +369,7 @@
                                           <div class="offer-box1" id="case1">
                                                 Go To Store
                                           </div>
-                                          <div class="offer-box2" id="offerBoxIntro" data-offers="8" data-added-case="added_case_2">
+                                          <div class="offer-box2" data-offers="8" data-added-case="added_case_2">
                                                 <small>8 Offers</small>
                                           </div>
                                     </div>
@@ -653,7 +653,7 @@
                                           </div>
                                     </div>
                               </div>
-                              <div id="added_case_2" class="row added-case2 added-case intro6" style="display: none;">
+                              <div id="added_case_2" class="row added-case2 added-case" style="display: none;">
                                     <div class="col-md-3 col-cs-12" style="padding-top: 20px; padding-bottom: 20px">
                                           <div class="offer-card">
                                                 <div class="card-front">
@@ -1022,11 +1022,24 @@
       </section>
       <section class="ad-sec ad-big">
 
-            <div class="flip-container intro4">
+            <div class="flip-container">
                   <div class="flipper">
                         <div class="front">
                               <img src="img/ad-960x180.jpg">
                         </div>
+<<<<<<< HEAD
+                 <div class="back">
+                       <div class="banner-flip-inner" style="height: 90%; width: 90%; background-color: #000;">
+                             <p>This banner should scroll</p>
+                             <p>It has a first paragraph</p>
+                             <p>It has a second paragraph</p>
+                             <p>It has a third paragraph</p>
+                             <p>It has a fourth paragraph</p>
+                       </div>
+                  </div>
+     		</div>
+      </div>
+=======
                         <div class="back">
                               <div class="banner-ad-flipback-container">
                                     <p>Paragraph 1<p/>
@@ -1041,6 +1054,7 @@
                         </div>
      		      </div>
             </div>
+>>>>>>> b033e246b1198f08742a857815d69aa842022cc4
 
       </section>
       <section class="product-sec">
@@ -1400,7 +1414,7 @@
 
 
                         <div class="pd-10 text-right">
-                              <h2><a class="intro5" href=""><strong>More Offer <i class="fa fa-caret-right"></i></strong></a></h2>
+                              <h2><a href=""><strong>More Offer <i class="fa fa-caret-right"></i></strong></a></h2>
                         </div>
                   </div>
             </div>
@@ -2245,7 +2259,7 @@
                                           <div class="col-sm-6">
                                                 <h3 class="text-uppercase">HELP & SUPPORT</h3>
                                                 <ul class="list-unstyled foot-links">
-                                                      <li class="intro7"><a href="">FAQs</a></li>
+                                                      <li><a href="">FAQs</a></li>
                                                       <li><a href="">Contact Us</a></li>
                                                       <li><a href="">Site Map</a></li>
                                                       <li><a href="">Home</a></li>
@@ -2360,80 +2374,29 @@
         var intro = introJs();
           intro.setOptions({
             steps: [
-              {
-                element: '.intro1',
-                intro: 'Please read these tips, it is important.',
-                position: 'bottom'
-              },
-            
-              {
-                element: '#savings-calculator',
-                intro: "This will show you how much you will save each year.",
-                position: 'bottom'
-              },
-              { // Pallab to update the 2 below with the correct element id
-                element: '#savings-calculator',
-                intro: "Your Cashback balance is here.",
-                position: 'bottom'
+              { 
+                intro: "Welcome to the new look WeShopSmart Site! Gear up for a quick tour of how to use the website"
               },
               {
                 element: '#savings-calculator',
-                intro: "Your Rewards & Settings are right here.",
-                position: 'bottom'
+                intro: "Try our new savings calculator",
+                position: 'left'
               },
               {
-                element: '.intro3',
-                intro: "Turning Tiles - Quick and easy access to offers and specials.",
-                position: 'bottom'
+                element: '#important-tips-trigger',
+                intro: 'Read our important tips if you ever have any questions or doubts.',
+                position: 'left'
               },
-
               {
-                element: '.intro4',
-                intro: "New turning Banners - View the offer and then directly Go to Store",
-                position: 'bottom'
-              },
-
-              {
-                element: '.intro5',
-                intro: 'Click here for "More Offers".This will then display a sliding Scroll on the benefits available.',
-                position: 'bottom'
-              },
-
-              {
-                element: '.intro6',
-                intro: "You will see 1, 2 or 20 offers displayed from time to time, click on these offers to reveal the specials.",
-                position: 'bottom'
-              },
-
-              {
-                element: '.intro7',
-                intro: "Need to know more about the program. FAQs is always a good read.",
-                position: 'bottom'
-              },
-              
-              {
-                intro: "Happy shopping."
+                intro: "Thank you for visiting. Please give Varun all your money."
               },
             ]
           });
 
-          intro.oncomplete(function() {
-            if(typeof(Storage) !== "undefined") {
-              sessionStorage.mainPageIntroCompleted = true;
-            }
-          });
-
-          if (!sessionStorage.mainPageIntroCompleted) {
-            intro.start();
-          }
-
+          intro.start();
       }
 
       setTimeout(startIntro,3000);
-      $(document).ready(function() {
-            $("#offerBoxIntro").trigger("click"); 
-      });
-     
 
       $(".offer-card-outer").hover(function(){
             $(".go-to-store-absolute").hide();

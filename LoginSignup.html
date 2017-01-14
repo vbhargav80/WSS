@@ -27,9 +27,11 @@
 
   <!-- Custom CSS -->
   <link href="css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="js/intro.js/introjs.css">
 
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
+  <script src="js/intro.js/intro.js"></script>
 
 </head>
    <body>
@@ -90,72 +92,72 @@
 <section class="sign-up ">
     <div class="container">
 
-        <div class="sign-form"><p class="club-member text-center"><strong>Club member sign in</strong></p>
-        <form class="member-login">
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <div class="form-group">
-                <input type="email" class="form-control" id="Email1" name="email" placeholder="Email ID">
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-            <div class="form-group">
-                <input type="text" class="form-control" id="pswd" name="pswd" placeholder="Password">
-                <div class="remember-me">
-                    <input id="chkMe" type="checkbox" name="chkMe">
-                    <label for="chkMe">Remember Me</label>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-           <div class="form-group">
-                <button type="submit" class="btn btn-lg btn-block btn-contact">Sign In</button>
-                <a href="#" data-toggle="modal" data-target="#myModal" class="forgot">Forgot your password?</a>
-            </div>
-        </div>
-        </form>
-        <form novalidate="novalidate" class="sign-up-form">
-        <p class="login">Not a member? Join now it's free</p>
-
-             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="sign-form"><p class="club-member text-center"><strong class="intro5">Club member sign in</strong></p>
+          <form class="member-login" novalidate="novalidate">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                 <div class="form-group">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="access" name="access" placeholder="Access Code">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="Email1" name="email" placeholder="Email ID">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="pswd" name="pswd" placeholder="Password">
+                    <input type="email" class="form-control" id="Email1" name="email" placeholder="Email ID">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="pswd" name="pswd" placeholder="Password">
+                    <div class="remember-me">
+                        <input id="chkMe" type="checkbox" name="chkMe">
+                        <label for="chkMe">Remember Me</label>
                     </div>
                 </div>
             </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="First Name"></input>
-                    </div>
-                     <div class="form-group">
-                        <input type="email" class="form-control" id="code" name="code" placeholder="Post Code">
-                    </div>
-                    <div class="form-group">
-                      <div class="checkbox">
-                        <label><input type="checkbox" value="">I Have Read and Agree to the Terms and Conditions</label>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               <div class="form-group">
+                    <button type="submit" class="btn btn-lg btn-block btn-contact">Sign In</button>
+                    <a href="#" data-toggle="modal" data-target="#myModal" class="forgot">Forgot your password?</a>
+                </div>
+            </div>
+          </form>
+        <form novalidate="novalidate" class="sign-up-form">
+          <p class="login intro6">Not a member? Join now it's free</p>
+
+               <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                  <div class="form-group">
+                      <div class="form-group">
+                          <input type="text" class="form-control" id="access" name="access" placeholder="Access Code">
                       </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="last" name="last" placeholder="Last Name"></input>
-                    </div>
-                    <div class="form-group">
-                        <select  class="form-control">
-                            <option value="Select Age">Select Age</option>
-                            <option value="18">18</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-lg btn-block btn-contact">Join Now</button>
-                    </div>
-                </div>
+                      <div class="form-group">
+                          <input type="email" class="form-control" id="Email1" name="email" placeholder="Email ID">
+                      </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control" id="pswd" name="pswd" placeholder="Password">
+                      </div>
+                  </div>
+              </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                      <div class="form-group">
+                          <input type="text" class="form-control" id="name" name="name" placeholder="First Name"></input>
+                      </div>
+                       <div class="form-group">
+                          <input type="email" class="form-control" id="code" name="code" placeholder="Post Code">
+                      </div>
+                      <div class="form-group">
+                        <div class="checkbox">
+                          <label><input type="checkbox" value="">I Have Read and Agree to the Terms and Conditions</label>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                      <div class="form-group">
+                          <input type="text" class="form-control" id="last" name="last" placeholder="Last Name"></input>
+                      </div>
+                      <div class="form-group">
+                          <select  class="form-control">
+                              <option value="Select Age">Select Age</option>
+                              <option value="18">18</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <button type="submit" class="btn btn-lg btn-block btn-contact">Join Now</button>
+                      </div>
+                  </div>
             </form>
 
 
@@ -180,7 +182,7 @@
     <div class="improve-block bg-light">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="col-lg-6 col-md-6 col-sm-6 intro2">
                    <div class="improve-inner pd-20 dmr-20">
                         <img src="img/improve-icon-1.png" class="imp-icon" alt="">
                         <div class="description">
@@ -210,7 +212,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 tmr-30">
-                <div class="embed-responsive embed-responsive-16by9">
+                <div class="embed-responsive embed-responsive-16by9 intro1">
                     <iframe width="500" height="315" src="https://www.youtube.com/embed/7urN-u9zZg0" frameborder="0" allowfullscreen></iframe>
                   </div>
                   <div class="improve-right">
@@ -292,7 +294,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="col-lg-offset-1 col-md-offset-1 col-lg-5 col-md-5 col-sm-6">
+                <div class="col-lg-offset-1 col-md-offset-1 col-lg-5 col-md-5 col-sm-6 intro3">
                    <div class="improve-inner pd-20 dmr-20">
                         <img src="img/review-ico-1.png" class="imp-icon" alt="">
                         <div class="description">
@@ -341,7 +343,7 @@
         <div class="container">
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-              <div class="embed-responsive embed-responsive-16by9">
+              <div class="embed-responsive embed-responsive-16by9 intro4">
                   <iframe src="https://www.youtube.com/embed/7urN-u9zZg0" allowfullscreen="" width="500" height="315" frameborder="0"></iframe>
                 </div>
 
@@ -460,6 +462,71 @@
 <!-- <script src="js/jquery.simplyscroll.min.js"></script> -->
 <script src="js/jquery.simplyscroll.js"></script>
 <script type="text/javascript" src="js/site.js"></script>
+<script>
+     
+
+      function startIntro(){
+        var intro = introJs();
+          intro.setOptions({
+            steps: [
+              {
+                intro: 'We have built a new and very unique We Shop Smart Program, called the Silver Service Shopping Club. This guide will only appear once. Here is a quick 60 second guide.'
+              },
+            
+              {
+                element: '.intro1',
+                intro: "We have a new video that points privileges & benefits and will give you ideas on how to save more money.",
+                position: 'bottom'
+              },
+
+              {
+                element: '.intro2',
+                intro: "3 points on how to stop, save and redeem.",
+                position: 'bottom'
+              },
+
+              {
+                element: '.intro3',
+                intro: "Here are 3 examples on how members have saved money.",
+                position: 'bottom'
+              },
+
+              {
+                element: '.intro4',
+                intro: "New testimonial Video",
+                position: 'bottom'
+              },
+
+              {
+                element: '.intro5',
+                intro: "If you are a current member, please sign in as normal.",
+                position: 'bottom'
+              },
+
+              {
+                element: '.intro6',
+                intro: "If you are a new member sign in as requested here.",
+                position: 'bottom'
+              }
+              
+            ]
+          });
+
+          intro.oncomplete(function() {
+            if(typeof(Storage) !== "undefined") {
+              sessionStorage.loginPageIntroCompleted = true;
+            }
+          });
+
+          if (!sessionStorage.loginPageIntroCompleted) {
+            intro.start();
+          }
+
+      }
+
+      setTimeout(startIntro,3000);
+      
+      </script>
 
 
 
