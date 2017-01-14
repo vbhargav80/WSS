@@ -46,7 +46,7 @@ $(document).ready(function () {
     $("#scroll-logos").simplyScroll();
     $(".banner-flip-inner").simplyScroll();
     
-	$(".card-details").enscroll({
+	$(".card-details, .banner-ad-flipback-container").enscroll({
 		showOnHover: false,
 		verticalTrackClass: 'track3',
 		verticalHandleClass: 'handle3'

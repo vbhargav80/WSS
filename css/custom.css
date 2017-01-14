@@ -689,6 +689,11 @@ cursor: pointer;
 background-color: #242B3B;
 
 }
+
+.offer-box2 {
+    cursor: pointer;
+}
+
 .offer-box2 small{
 color: #fff;
 text-transform: none;
@@ -1567,7 +1572,16 @@ opacity:0;
 	padding:10px;
 	text-align:left;
 	font-size:14px;
-	overflow:auto;
+	overflow:hidden;
+    position: relative;
+}
+
+.flip-container .back .banner-ad-flipback-container {
+    background-color:#000;
+	color:#fff;
+    width: 100% !important;
+    padding: 15px;
+    height: 180px;
 }
 
 /* Start Morsy Edits */
