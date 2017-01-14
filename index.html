@@ -28,6 +28,33 @@
       <!-- jQuery -->
       <script src="js/jquery.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.4.0/intro.min.js"></script>
+      
+      <script>
+            $(document).ready(function(){
+                  /*$(".added-case1").hide();
+                  $(".added-case2").hide();
+                   $("div#case1").click(function(){*/
+                         /*
+                         var item = document.createElement("div");
+                         item.innerHTML = "<div class='row added'><div class='col-md-3 col-cs-12'><div class='offer-card'><div class='card-front'><div class='offer-img'><img src='img/panelLogo.jpg' class='img-responsive center-block'></div></div><div class='card-back'><p class='mb30 mt15'><strong>Innovations (AU & NZ)</strong></p><p class='mb0'>Name: Fill your home with Christmas cheer! Shop Garlands, Trees and more at Innovations. Click Here! Description: Fill your home with Christmas   <a href='' class='readMore'>  Read more..</a></p><p class='mb30'><strong>Cashback upto 8.00 %</strong></p><p class='mb30'><strong>Use this code at the store checkout:</strong></p></div></div></div><div class='col-md-3 col-cs-12'><div class='offer-card'><div class='card-front'><div class='offer-img'><img src='img/panelLogo.jpg' class='img-responsive center-block'></div></div><div class='card-back'><p class='mb30 mt15'><strong>Innovations (AU & NZ)</strong></p><p class='mb0'>Name: Fill your home with Christmas cheer! Shop Garlands, Trees and more at Innovations. Click Here! Description: Fill your home with Christmas   <a href='' class='readMore'>  Read more..</a></p><p class='mb30'><strong>Cashback upto 8.00 %</strong></p><p class='mb30'><strong>Use this code at the store checkout:</strong></p></div></div></div>";
+
+                         // $(".'").after(item);
+                         */
+                         /*$(".added-case2").hide();
+                         $(".added-case1").toggle(500);
+                  });
+                  $("div#case2").click(function(){
+                        $(".added-case1").hide();
+                        $(".added-case2").toggle(500);
+                  });*/
+
+                /*$(".card-back .offer-box2").click(function() {
+                    $(".added-case:not(#" + $(this).data("added-case") + ")").hide();
+
+                    $("#" + $(this).data("added-case")).toggle(500);
+                });*/
+            });
+      </script>
 </head>
 
 <body>
@@ -318,7 +345,7 @@
                         <h1 class="text-center font-open"><strong>OFFERS ENDING SOON</strong></h1>
                         <div class="ws-slider">
                               <div class="offer-card-outer">
-                                    <div class="offer-card">
+                                    <div class="offer-card" ontouchstart="this.classList.toggle('hover');">
                                           <div class="card-front">
                                                 <div class="offer-img">
                                                       <img src="img/offer-1.jpg">
@@ -476,7 +503,7 @@
                               </div>
                         </div>
                         <div id="sub-offer-panel-1" class="" >
-                              <div id="added_case_1" class="row added-case1 added-case" style="display: none;">
+                              <div id="added_case_1" class="ws-slider row added-case1 added-case" >
                                     <div class="col-md-3 col-cs-12" style="padding-top: 20px; padding-bottom: 20px">
                                           <div class="offer-card-no-flip">
                                                 <div class="card-front-no-flip">
@@ -508,11 +535,11 @@
                                                             <div class="offer-box1">
                                                                   Go To Store
                                                             </div>
-                                                      <div class="offer-box2 add-to-favourties">
+															<div class="offer-box2 add-to-favourties">
                                                                   <small>Add To Favourites</small>
                                                             </div>
                                                       </div>
-                                                      <div class="offer-code">
+                                                      <div class="offer-code clearfix">
                                                             <div class="col-md-6 offer-3">Offer 1</div>
                                                             <div class="col-md-6"><span class="offer-3">Code:</span> 45545989</div>
                                                       </div>
@@ -554,7 +581,7 @@
                                                                   <small>Add To Favourites</small>
                                                             </div>
                                                       </div>
-                                                      <div class="offer-code">
+                                                      <div class="offer-code  clearfix">
                                                             <div class="col-md-6 offer-3">Offer 2</div>
                                                             <div class="col-md-6"><span class="offer-3">Code:</span> 45545989</div>
                                                       </div>
@@ -583,7 +610,7 @@
                                                                   <small>Add To Favourites</small>
                                                             </div>
                                                       </div>
-                                                      <div class="offer-code">
+                                                      <div class="offer-code  clearfix">
                                                             <div class="col-md-6 offer-3">Offer 3</div>
                                                             <div class="col-md-6"><span class="offer-3">Code:</span> 45545989</div>
                                                       </div>
@@ -613,7 +640,7 @@
                                                                   <small>Add To Favourites</small>
                                                             </div>
                                                       </div>
-                                                      <div class="offer-code">
+                                                      <div class="offer-code clearfix">
                                                             <div class="col-md-6 offer-3">Offer 4</div>
                                                             <div class="col-md-6"><span class="offer-3">Code:</span> 45545989</div>
                                                       </div>
@@ -644,7 +671,7 @@
                                                                   <small>Add To Favourites</small>
                                                             </div>
                                                       </div>
-                                                      <div class="offer-code">
+                                                      <div class="offer-code clearfix">
                                                             <div class="col-md-6 offer-3">Offer 4</div>
                                                             <div class="col-md-6"><span class="offer-3">Code:</span> 45545989</div>
                                                       </div>
@@ -653,7 +680,7 @@
                                           </div>
                                     </div>
                               </div>
-                              <div id="added_case_2" class="row added-case2 added-case" style="display: none;">
+                              <div id="added_case_2" class="ws-slider  row added-case2 added-case" >
                                     <div class="col-md-3 col-cs-12" style="padding-top: 20px; padding-bottom: 20px">
                                           <div class="offer-card">
                                                 <div class="card-front">
@@ -1022,25 +1049,14 @@
       </section>
       <section class="ad-sec ad-big">
 
-            <div class="flip-container">
-                  <div class="flipper">
-                        <div class="front">
-                              <img src="img/ad-960x180.jpg">
+      		<div class="flip-container">
+            <div class="flipper">
+            			<div class="front">
+            			  <img src="img/ad-960x180.jpg">
                         </div>
-                        <div class="back">
-                              <div class="banner-ad-flipback-container">
-                                    <p>Paragraph 1<p/>
-                                    <p>Paragraph 2<p/>
-                                    <p>Paragraph 3<p/>
-                                    <p>Paragraph 4<p/>
-                                    <p>Paragraph 5<p/>
-                                    <p>Paragraph 6<p/>
-                                    <p>Paragraph 7<p/>
-                                    <p>Paragraph 8<p/>
-                              </div>
-                        </div>
-     		      </div>
-            </div>
+                 <div class="back">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+     		</div>
+      </div>
 
       </section>
       <section class="product-sec">
@@ -1076,7 +1092,10 @@
                                                      <p>This tile has quite a bit of content, a lot of content, it should expand down.</p>
                                                      <p>This tile has quite a bit of content, a lot of content, it should expand down.</p>
                                                 </div>
-                                                <div class="clearfix">
+                                                 <div class="offer-code">
+                                                      CODE: 45545989
+                                                </div>
+												<div class="clearfix">
                                                       <div class="offer-box1">
                                                              To Store
                                                       </div>
@@ -1085,9 +1104,7 @@
 
                                                       </div>
                                                 </div>
-                                                <div class="offer-code">
-                                                      CODE: 45545989
-                                                </div>
+                                               
                                           </div>
                                     </div>
                               </div>
@@ -1110,7 +1127,10 @@
                                           <div class="card-back">
                                                 <h4>Up To 10% Cashback</h4>
                                                 <div class="card-details"><p>FREE Amazonia Protein 500gm with any 1 Kilo Amazonia Slim&Trim protein!</p></div>
-                                                <div class="clearfix">
+                                                <div class="offer-code">
+                                                      CODE: 45545989
+                                                </div>
+												<div class="clearfix">
                                                       <div class="offer-box1">
                                                             Go To Store
                                                       </div>
@@ -1119,9 +1139,7 @@
 
                                                       </div>
                                                 </div>
-                                                <div class="offer-code">
-                                                      CODE: 45545989
-                                                </div>
+                                                
                                           </div>
                                     </div>
                               </div>
@@ -1144,7 +1162,10 @@
                                           <div class="card-back">
                                                 <h4>Up To 10% Cashback</h4>
                                                 <div class="card-details"><p>FREE Amazonia Protein 500gm with any 1 Kilo Amazonia Slim&Trim protein!</p></div>
-                                                <div class="clearfix">
+                                                <div class="offer-code">
+                                                      CODE: 45545989
+                                                </div>
+												<div class="clearfix">
                                                       <div class="offer-box1">
                                                             Go To Store
                                                       </div>
@@ -1153,9 +1174,7 @@
 
                                                       </div>
                                                 </div>
-                                                <div class="offer-code">
-                                                      CODE: 45545989
-                                                </div>
+                                                
                                           </div>
                                     </div>
                               </div>
@@ -1178,7 +1197,10 @@
                                           <div class="card-back">
                                                 <h4>Up To 10% Cashback</h4>
                                                 <div class="card-details"><p>FREE Amazonia Protein 500gm with any 1 Kilo Amazonia Slim&Trim protein!</p></div>
-                                                <div class="clearfix">
+                                                <div class="offer-code">
+                                                      CODE: 45545989
+                                                </div>
+												<div class="clearfix">
                                                       <div class="offer-box1">
                                                             Go To Store
                                                       </div>
@@ -1187,9 +1209,7 @@
 
                                                       </div>
                                                 </div>
-                                                <div class="offer-code">
-                                                      CODE: 45545989
-                                                </div>
+                                                
                                           </div>
                                     </div>
                               </div>
@@ -1449,7 +1469,10 @@
                                                      <p>This tile has quite a bit of content, a lot of content, it should expand down.</p>
                                                      <p>This tile has quite a bit of content, a lot of content, it should expand down.</p>
                                                 </div>
-                                                <div class="clearfix">
+                                                <div class="offer-code clearfix">
+                                                      CODE: 45545989
+                                                </div>
+												<div class="clearfix">
                                                       <div class="offer-box1">
                                                             Go To Store
                                                       </div>
@@ -1458,9 +1481,7 @@
 
                                                       </div>
                                                 </div>
-                                                <div class="offer-code">
-                                                      CODE: 45545989
-                                                </div>
+                                                
                                           </div>
                                     </div>
                               </div>
@@ -1483,7 +1504,10 @@
                                           <div class="card-back">
                                                 <h4>Up To 10% Cashback</h4>
                                                 <div class="card-details"><p>FREE Amazonia Protein 500gm with any 1 Kilo Amazonia Slim&Trim protein!</p></div>
-                                                <div class="clearfix">
+                                                <div class="offer-code">
+                                                      CODE: 45545989
+                                                </div>
+												<div class="clearfix">
                                                       <div class="offer-box1">
                                                             Go To Store
                                                       </div>
@@ -1492,9 +1516,7 @@
 
                                                       </div>
                                                 </div>
-                                                <div class="offer-code">
-                                                      CODE: 45545989
-                                                </div>
+                                                
                                           </div>
                                     </div>
                               </div>
@@ -1517,7 +1539,10 @@
                                           <div class="card-back">
                                                 <h4>Up To 10% Cashback</h4>
                                                 <div class="card-details"><p>FREE Amazonia Protein 500gm with any 1 Kilo Amazonia Slim&Trim protein!</p></div>
-                                                <div class="clearfix">
+                                                <div class="offer-code">
+                                                      CODE: 45545989
+                                                </div>
+												<div class="clearfix">
                                                       <div class="offer-box1">
                                                             Go To Store
                                                       </div>
@@ -1526,9 +1551,7 @@
 
                                                       </div>
                                                 </div>
-                                                <div class="offer-code">
-                                                      CODE: 45545989
-                                                </div>
+                                                
                                           </div>
                                     </div>
                               </div>
@@ -1551,7 +1574,10 @@
                                           <div class="card-back">
                                                 <h4>Up To 10% Cashback</h4>
                                                 <div class="card-details"><p>FREE Amazonia Protein 500gm with any 1 Kilo Amazonia Slim&Trim protein!</p></div>
-                                                <div class="clearfix">
+                                                <div class="offer-code">
+                                                      CODE: 45545989
+                                                </div>
+												<div class="clearfix">
                                                       <div class="offer-box1">
                                                             Go To Store
                                                       </div>
@@ -1560,15 +1586,13 @@
 
                                                       </div>
                                                 </div>
-                                                <div class="offer-code">
-                                                      CODE: 45545989
-                                                </div>
+                                                
                                           </div>
                                     </div>
                               </div>
                         </div>
                         <div id="added_case_11" class="row added-case1 added-case" style="display: none;">
-                              <div class="col-md-3 col-cs-12">
+                              <div class="col-md-3 col-cs-12 ">
                                     <div class="offer-card">
                                           <div class="card-front">
                                                 <div class="offer-img">
@@ -1817,7 +1841,10 @@
                                                      <p>This tile has quite a bit of content, a lot of content, it should expand down.</p>
                                                      <p>This tile has quite a bit of content, a lot of content, it should expand down.</p>
                                                 </div>
-                                                <div class="clearfix">
+                                                <div class="offer-code">
+                                                      CODE: 45545989
+                                                </div>
+												<div class="clearfix">
                                                       <div class="offer-box1">
                                                             Go To Store
                                                       </div>
@@ -1826,9 +1853,7 @@
 
                                                       </div>
                                                 </div>
-                                                <div class="offer-code">
-                                                      CODE: 45545989
-                                                </div>
+                                                
                                           </div>
                                     </div>
                               </div>
@@ -1851,7 +1876,10 @@
                                           <div class="card-back">
                                                 <h4>Up To 10% Cashback</h4>
                                                 <div class="card-details"><p>FREE Amazonia Protein 500gm with any 1 Kilo Amazonia Slim&Trim protein!</p></div>
-                                                <div class="clearfix">
+                                                <div class="offer-code">
+                                                      CODE: 45545989
+                                                </div>
+												<div class="clearfix">
                                                       <div class="offer-box1">
                                                             Go To Store
                                                       </div>
@@ -1860,9 +1888,7 @@
 
                                                       </div>
                                                 </div>
-                                                <div class="offer-code">
-                                                      CODE: 45545989
-                                                </div>
+                                                
                                           </div>
                                     </div>
                               </div>
@@ -1885,7 +1911,10 @@
                                           <div class="card-back">
                                                 <h4>Up To 10% Cashback</h4>
                                                 <div class="card-details"><p>FREE Amazonia Protein 500gm with any 1 Kilo Amazonia Slim&Trim protein!</p></div>
-                                                <div class="clearfix">
+                                                <div class="offer-code">
+                                                      CODE: 45545989
+                                                </div>
+												<div class="clearfix">
                                                       <div class="offer-box1">
                                                             Go To Store
                                                       </div>
@@ -1894,9 +1923,7 @@
 
                                                       </div>
                                                 </div>
-                                                <div class="offer-code">
-                                                      CODE: 45545989
-                                                </div>
+                                                
                                           </div>
                                     </div>
                               </div>
@@ -1919,7 +1946,10 @@
                                           <div class="card-back">
                                                 <h4>Up To 10% Cashback</h4>
                                                 <div class="card-details"><p>FREE Amazonia Protein 500gm with any 1 Kilo Amazonia Slim&Trim protein!</p></div>
-                                                <div class="clearfix">
+                                                <div class="offer-code">
+                                                      CODE: 45545989
+                                                </div>
+												<div class="clearfix">
                                                       <div class="offer-box1">
                                                             Go To Store
                                                       </div>
@@ -1928,9 +1958,7 @@
 
                                                       </div>
                                                 </div>
-                                                <div class="offer-code">
-                                                      CODE: 45545989
-                                                </div>
+                                                
                                           </div>
                                     </div>
                               </div>
