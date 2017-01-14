@@ -44,6 +44,7 @@ $(document).ready(function () {
 
 
     $("#scroll-logos").simplyScroll();
+    $(".banner-flip-inner").simplyScroll();
     
 	$(".card-details").enscroll({
 		showOnHover: false,
