@@ -1,0 +1,72 @@
+
+.card-flip-container {
+	perspective: 1000;
+	transform-style: preserve-3d;
+    margin: 5px;
+}
+
+/* flip the pane when hovered */
+.card-flip-container:hover .card-flipper , .card-flip-container.hover .card-flipper {
+    transform: rotateY(180deg) scale(1.05);
+    position: relative;
+    z-index: 2;
+}
+
+.card-flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+    color: #fff;
+    min-height: 275px;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.card-flip-front, .card-flip-back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+    width: 100% !important;
+    height: 275px;
+    background-color:#090f13;
+    text-align: center;
+    font-family: 'Open Sans';
+}
+
+/* front pane, placed above back */
+.card-flip-front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.card-flip-back {
+	transform: rotateY(180deg);
+}
+
+.card-flip-back .card-details {
+  min-height: 213px;
+}
+
+.card-flip-back h4{
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    margin: 0;
+    padding: 15px 15px;
+	color:#b47b46;
+	font-size:20px;
+	text-transform:uppercase;
+	font-weight:600;
+	font-family: 'Open Sans';
+	text-align:left;
+
+}
+
+.card-flip-back .card-details {
+    padding:15px 15px;
+    height: 110px;
+	text-align:left;
+	color:#b3b3b3;
+	width: 100% !important;
+	overflow: auto;
+}

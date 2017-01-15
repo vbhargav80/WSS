@@ -454,6 +454,12 @@ body.ie11 .offer-card{
 .offer-card-outer .offer-card:hover .card-front, .added-case .col-md-3:hover .offer-card .card-front {
   transform: rotateY( 180deg );
 }
+.pop-up-2 .offer-card:hover .card-front, .added-case .col-md-3:hover .offer-card .card-front {
+  transform: rotateY( 180deg );
+}
+.pop-up-2 .offer-card:hover .card-back, .added-case .col-md-3:hover .offer-card .card-back{
+  transform: rotateY( 0deg );
+}
 .offer-card {
     transition: 0.6s;
     transform-style: preserve-3d;
@@ -975,7 +981,6 @@ ul.discounts {
 }
 
 ul.discounts li {
-  inline-block;
   float: left;
   display: inline-table;
   width: 27%;
@@ -1426,7 +1431,6 @@ box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.45);
     .pd-20 {
         padding: 10px;
     }
-
 	 .category-box-outer{width:100%;}
 	 .inner-left h2 {
   font-size: 21px;
@@ -1622,7 +1626,7 @@ body, html
     min-height: 275px;
 	
 }
-.added-case .card-back .card-details { height: 234px; overflow: auto; }
+.added-case .card-back .card-details, .pop-up-2 .card-back .card-details { height: 234px; overflow: auto; }
 @media (max-width: 767px)
 {
     .imp-tips-wrapper
@@ -2042,3 +2046,53 @@ body, html
   }
 }
 /*modal css end*/
+
+/*pop up*/
+.pop-up, .pop-up-2 {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.92);
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    bottom: -120%;
+    overflow: auto;
+    display: none;
+    transition: all .5s cubic-bezier(.51, -0.2, .35, 1.47);
+    -webkit-transition: all .5s cubic-bezier(.51, -0.2, .35, 1.47);
+    -moz-transition: all .5s cubic-bezier(.51, -0.2, .35, 1.47);
+    -ms-transition: all .5s cubic-bezier(.51, -0.2, .35, 1.47);
+    -o-transition: all .5s cubic-bezier(.51, -0.2, .35, 1.47);
+}
+
+.colse-pop-up {
+    width: 100%;
+    text-align: right;
+    color: #B47B46;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.colse-pop-up i {
+    height: 40px;
+    width: 40px;
+    line-height: 35px;
+    border: 2px solid #B47B46;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+}
+.colse-pop-up i:hover {
+    color: #4a2f17;
+    border-color: #4a2f17;
+}
+.pop-up-2 .offer-box2, .pop-up .offer-box2 {
+    line-height: 40px;   
+}
+@media screen and (max-width: 767px){
+    .pop-up, pop-up-2 {
+        padding: 0;   
+     }
+    .pop-up-2 .offer-box2, .pop-up .offer-box2 {
+        line-height: normal;   
+    }
+}
