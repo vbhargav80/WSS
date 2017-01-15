@@ -1396,7 +1396,7 @@ box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.45);
 .nav-tabs > li > a {
     width: 100%;
 }
-.card-back .card-details { height: 220px; } 
+.card-back .card-details { height: 115px; } 
 }
 
 @media screen and (max-width:639px) {
