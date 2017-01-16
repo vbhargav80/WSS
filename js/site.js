@@ -90,7 +90,7 @@ $(document).ready(function () {
     });
     
     // ----- TILE -----
-    $(".offer-box2").click(function () {
+    $(".offer-box2, .close-offer-panel").click(function () {
         $(".added-case:not(#" + $(this).data("added-case") + ")").hide();
 
         $("#" + $(this).data("added-case")).toggle(500);

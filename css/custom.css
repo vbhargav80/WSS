@@ -2042,3 +2042,19 @@ body, html
   }
 }
 /*modal css end*/
+
+.close-offer-panel i {
+    height: 40px;
+    width: 40px;
+    line-height: 35px;
+    border: 2px solid #B47B46;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+}
+.close-offer-panel i:hover {
+    color: #4a2f17;
+    border-color: #4a2f17;
+}
+
+
